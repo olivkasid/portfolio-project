@@ -1,22 +1,53 @@
-body {
-  font-family: "Roboto";
+:root {
+  --main-font: "Roboto";
+  --btn-font: "Montserrat";
 }
-h1 {
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 75px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-h2 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: #f65282;
-}
+
+h1,
+h2,
 p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-family: var(--main-font);
   color: #ffffff;
+  text-align: center;
+}
+
+.hero {
+  background-image: url("/styles/bg.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 158px 0px;
+}
+
+.hero h1,
+.hero h2 {
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+.hero h2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+.hero h1 {
+  font-size: 72px;
+  line-height: 84px;
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 48px;
+  }
+}
+
+.btn-start {
+  display: block !important;
+  width: fit-content;
+  margin: auto 0;
+  background-color: #ffffff !important;
+  text-transform: uppercase;
+  font-family: var(--btn-font);
+  margin: 0 auto;
+  padding: 18px 40px !important;
+  border-radius: 50px !important;
 }
