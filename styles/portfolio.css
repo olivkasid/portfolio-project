@@ -2,7 +2,9 @@
   --main-font: "Roboto";
   --btn-font: "Montserrat";
 }
-
+html {
+  width: 100%;
+}
 h1,
 h2,
 p {
@@ -33,10 +35,17 @@ p {
   font-size: 72px;
   line-height: 84px;
 }
-
+@media (max-width: 1200px) {
+  .photos {
+    justify-content: center;
+  }
+}
 @media (max-width: 500px) {
   .hero h1 {
     font-size: 48px;
+  }
+  .photos {
+    padding: 0 20px;
   }
 }
 
@@ -51,3 +60,18 @@ p {
   padding: 18px 40px !important;
   border-radius: 50px !important;
 }
+.album {
+  padding: 0 !important;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.photos img {
+  padding: 9px;
+}
+/* .col img {
+  height: 100%;
+  width: auto;
+} */
