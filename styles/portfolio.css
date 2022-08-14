@@ -1,18 +1,47 @@
 :root {
   --main-font: "Roboto";
   --btn-font: "Montserrat";
+  --header-color: #f65282;
 }
 html {
   width: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: #1b1b1b !important;
 }
 h1,
 h2,
+h3,
 p {
   font-family: var(--main-font);
   color: #ffffff;
   text-align: center;
 }
 
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700 !important;
+}
+
+h3 {
+  color: #f65282 !important;
+}
+p {
+  font-size: 18px;
+}
+i {
+  color: #ffffff;
+  margin-right: 30px;
+}
 .hero {
   background-image: url("/styles/bg.png");
   height: 100%;
@@ -22,11 +51,6 @@ p {
   padding: 158px 0px;
 }
 
-.hero h1,
-.hero h2 {
-  text-transform: uppercase;
-  font-weight: 700 !important;
-}
 .hero h2 {
   font-size: 24px;
   line-height: 28px;
@@ -40,12 +64,24 @@ p {
     justify-content: center;
   }
 }
+@media (max-width: 870px) {
+  .about-hero-img {
+    width: 100% !important;
+  }
+  .about-hero-img img {
+    margin: 0 auto;
+    display: block;
+  }
+}
 @media (max-width: 500px) {
   .hero h1 {
     font-size: 48px;
   }
   .photos {
     padding: 0 20px;
+  }
+  .camera {
+    max-width: 285px !important;
   }
 }
 
@@ -71,7 +107,62 @@ p {
 .photos img {
   padding: 9px;
 }
-/* .col img {
-  height: 100%;
-  width: auto;
-} */
+.about-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-hero-img {
+  padding: 0 !important;
+  display: inline-block;
+  width: 50%;
+}
+.about-hero-text {
+  padding-left: 40px;
+  width: 48%;
+  display: inline-block;
+}
+.about-hero h1,
+.about-hero h3,
+.about-hero p {
+  text-align: left;
+}
+.about-hero h1 {
+  font-size: 64px;
+  line-height: 75px;
+}
+.about-hero h3 {
+  font-size: 18px;
+  line-height: 21px;
+}
+.camera {
+  background-color: #2d2727;
+  padding: 20px;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+}
+.camera p {
+  display: inline-block;
+  font-size: 15px;
+}
+.contact-button {
+  background-color: #ffffff;
+  padding: 18px 30px;
+  font-family: var(--btn-font);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #272142;
+  border-radius: 50px;
+}
+.about-album {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.about-album img {
+  max-height: 280px;
+}
