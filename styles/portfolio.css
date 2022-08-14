@@ -72,6 +72,9 @@ i {
     margin: 0 auto;
     display: block;
   }
+  .about-hero-text {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 500px) {
   .hero h1 {
@@ -147,6 +150,7 @@ i {
   font-size: 15px;
 }
 .contact-button {
+  display: block;
   background-color: #ffffff;
   padding: 18px 30px;
   font-family: var(--btn-font);
