@@ -170,3 +170,6 @@ i {
 .about-album img {
   max-height: 280px;
 }
+.contact h3 {
+  font-size: 14px;
+}
