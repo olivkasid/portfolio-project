@@ -75,10 +75,13 @@ i {
   .about-hero-text {
     width: 100% !important;
   }
+  .header {
+    padding: 0 !important;
+  }
 }
 @media (max-width: 500px) {
   .hero h1 {
-    font-size: 48px;
+    font-size: 43px;
   }
   .photos {
     padding: 0 20px;
@@ -172,4 +175,28 @@ i {
 }
 .contact h3 {
   font-size: 14px;
+}
+.header {
+  padding: 0 140px;
+  background-color: #202020;
+}
+.navbar {
+  background-color: #202020 !important;
+}
+.nav-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff !important;
+  padding: 2.5rem 1rem !important;
+}
+.nav-link:hover {
+  color: #b5b5b5 !important;
+}
+.collapse {
+  justify-content: end !important ;
+}
+.navbar-toggler-icon {
+  color: #ffffff !important;
 }
