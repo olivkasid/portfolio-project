@@ -231,6 +231,14 @@ footer {
   line-height: 17px;
   color: #272142;
   border-radius: 50px;
+  border: 1px solid #ffffff;
+  width: fit-content;
+  transition: 300ms;
+}
+.contact-button:hover {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  text-decoration: none;
 }
 .about-album {
   display: flex;
